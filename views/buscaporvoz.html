@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árvore</title>
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/busca.css">
+</head>
+
+<body>
+
+  <div>
+    <div class="container-banner">
+      <div class="banner-logo">
+        <a href="/">
+          <img src='./assets/logo_arvore.svg'></img>
+        </a>
+      </div>
+      <div class="input-busca">
+        <input />
+      </div>
+      <div class="user-menu">
+        <a>
+          <div class="avatar">N</div>
+          <span>Nome Aluno</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class='container-menu'>
+      <a href="/"> Inicio </a>
+      <a href="/categoria.html"> Categorias </a>
+      <a href="/banca.html"> Banca </a>
+      <a href="/indicados.html"> Indicados </a>
+      <a href="/conquista.html"> Conquista </a>
+      <a href="/atividades.html"> Atividades </a>
+      <a href="/favoritos.html"> Favoritos </a>
+      <a href="/meus-ebooks.html"> Meus-Ebooks </a>
+      <div class="empty"></div>
+      <div class="empty"></div>
+    </nav>
+
+    <main class="principal-content">
+      <section>
+        <section class="secao-livro">
+          <div class="conteiner">
+
+
+            <div class="search">
+              <h1>Busca por voz</h1>
+
+              <button id="speakbt"><img src="./assets/otto.png" alt="">
+                Buscar</button>
+
+              <div id="resultSpeak">Retorno</div>
+
+              <div id="resultSearch">Resultado</div>
+            </div>
+
+            <div id="resultadobusca" class="resultadobusca esconder">
+              <div class="container-info-livro">
+                <div>
+                  <img id="capa" src="" alt="">
+                </div>
+                <div class="infos-livros">
+                  <h1 id="titulo"></h1>
+                  <p id="autor"></p>
+                  <p id="editora"></p>
+                  <p id="edicao"></p>
+
+                  <div class="nuvemdepalavra">
+                    <img id="nuvem" src="" alt="">
+                  </div>
+
+                  <div id="botoes" class="botoes">
+                    <div class="botao leragora"> Ler Agora</div>
+                    <div class="botao indicar"> Indicar </div>
+                    <div class="botao favorito"> Favoritar </div>
+
+                  </div>
+
+                  <img src="" alt="">
+
+
+
+                </div>
+              </div>
+              <div class="mais-infos">
+                <h2 id="mostrar-esconder">
+                  Mais Informações
+                </h2>
+                <div id="extras" class="extras">
+                  <div>
+                    <p class="sub-titulo">Sinopse: </p>
+                    <p id="sinopse"></p>
+                  </div>
+                  <div>
+                    <p class="sub-titulo">Tipo de Leitor: </p>
+                    <p class="item-info" id="tipodeleitor"></p>
+                  </div>
+                  <div>
+                    <p class="sub-titulo">Idioma: </p>
+                    <p class="item-info" id="idioma"></p>
+                  </div>
+
+                  <div>
+                    <p class="sub-titulo">Categoria: </p>
+                    <div class="content-itens">
+                      <p class="item-info" id="categoria1"></p>
+                      <p class="item-info" id="categoria2"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="sub-titulo">Temática: </p>
+                    <div class="content-itens">
+                      <p class="item-info" id="tematica1"></p>
+                      <p class="item-info" id="tematica2"></p>
+                      <p class="item-info" id="tematica3"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="sub-titulo">Caracteristicas: </p>
+                    <div class="content-itens">
+                      <p class="item-info" id="caracteristicas1"></p>
+                      <p class="item-info" id="caracteristicas2"></p>
+                      <p class="item-info" id="caracteristicas3"></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+        </section>
+
+
+      </section>
+
+    </main>
+
+
+  </div>
+  <script src="/busca.js" async="async"></script>
+  <script src="/scriptoggler.js" async="async"></script>
+
+</body>
+
+</html>

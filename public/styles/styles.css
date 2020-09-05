@@ -1,0 +1,273 @@
+/*Header*/
+.container-banner {
+  width: 100%;
+  background-color: #45CBCE;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;
+}
+
+.user-menu a {
+  display: flex;
+  justify-content: center;  
+  align-items: center;  
+}
+
+.user-menu a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7d97ad;
+
+  background-size: cover;
+  background-position: center;
+  background-color: #e1e7ea;
+
+}
+
+.user-menu a span {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 10px;
+  line-height: 1;
+  position: relative;
+  top: -2px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+
+
+.input-busca {
+  width: 50%;
+}
+
+input {  
+  width: 100%;
+  padding: 10px;
+  height: 46px;  
+  border: 0;
+  border-radius: 8px;
+  
+}
+
+/* Menu */
+.container-menu {
+  font-family: Arial ,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;  
+  text-align: center;
+  align-items: center;
+  height: 53px;
+  border-bottom: 1px solid #9F9F9F;
+  padding: 0 10px;
+  
+}
+
+.container-menu a {      
+  color: #9F9F9F;
+  padding: 19px 20px 17px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+
+.empty {
+  box-sizing: border-box;
+    width: 100%;  
+
+}
+
+.principal-content {  
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;  
+}
+
+/* Banner Roxo */
+
+.banner-content {
+  width: 100%;  
+  padding: 16px 26px;
+  border-radius: 8px;
+  background-color: #CFBAFF;
+}
+
+.banner-content img {
+  min-height: 30px;
+  min-width: 251px;
+  max-width: 251px;
+  max-height: 30px;
+}
+
+.banner-content a {
+  color: #8D49C8;
+}
+
+.banner-content a .link {
+  display: flex;    
+  align-items: center;
+}
+
+.banner-content a .link span{
+  padding-left: 50px;
+}
+
+/* Seção */
+.titulo-secao {  
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.container-livros {  
+  display: flex;  
+}
+
+.container-livros img {
+  width: 260px;
+  height: auto;
+  padding: 8px;
+  border-radius: 8px;  
+}
+
+/* Categoria */
+/* Destaque */
+.secao-categoria {
+  margin-bottom: 100px;
+}
+.titulo-categoria {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.container-categoria{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.container-categoria a{
+  text-decoration: none;
+}
+
+.container-categoria a:hover .item-categoria-destaque{
+  background-color: #6b42c7;  
+}
+
+.item-categoria-destaque {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width: 233px;
+  height: 243px;
+  background-color: #8553F4;
+  border-radius: 5px;
+  color: #ffffff;  
+}
+
+.container-categoria p{
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/* Todas Categorias */
+
+.item-categorias {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width: 207px;
+  height: 158px;
+  
+  border-radius: 5px;
+
+  background-color: #ffffff;  
+  border: 1px solid #53656F;
+  
+}
+
+.item-categorias p {
+  color: #53656F;
+}
+
+/* Indicados */
+
+.content-indicados {
+  display: flex;  
+  justify-content: space-between;  
+  margin-bottom: 40px;
+
+}
+
+.content-indicados input {
+  width: 360px;
+  border: 1px solid rgb(179, 183, 185);
+  font-size: 15px;
+}
+
+.titulo-outros {
+  font-size: 40px;
+}
+
+.paragrafo {
+  color: rgba(0,0,0,0.7);
+}
+
+/* Meus Ebooks */
+.container-meus-livros{
+  display: flex;
+
+}
+
+.container-meus-livros img{
+  width: 182px;
+  height: 265px;
+  margin-right: 8px;  
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
+
+.dados-livros {
+  width: 182px;
+}
+
+.dados-livros .titulo {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dados-livros .autor {
+  font-size: 16px;
+  color: rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+
+.dados-livros .tag {
+  font-size: 16px;
+  height: 19px;
+  vertical-align: top;
+  display: inline-block;
+  justify-content: center;
+  line-height: 18px;
+  font-weight: bold;
+  color: #53656F;
+
+  padding: 0 8px;
+
+
+  background-color: #DFE5E9;
+  border-radius: 10px;
+} 

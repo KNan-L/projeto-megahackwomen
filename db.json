@@ -1,0 +1,18 @@
+{
+  "livros": [
+    {
+      "id": 1,
+      "titulo": "Esaú e Jacó",
+      "autor": "Machado de Assis",
+      "sinopse": "Esaú e Jacó é, originalmente, um conto bíblico que inspirou a obra de Machado de Assis. O direito ao trono que, preferencialmente seria do filho primogênito, Esaú, é o pontapé inicial da trama. Porém, a preferência por Jacó faz com que a mãe dos dois engane seu marido já velho fazendo seu herdeiro escolhido se passar por seu irmão. Com isso um grande conflito entre os dois irmãos se estabelece. O autor deixa bem claro o papel centralizador da mãe, maior articuladora da história.",
+      "capa": "49709315336.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "alma inquieta",
+      "autor": "Olavo Bilac",
+      "sinopse": "",
+      "capa": "49709315414.jpg"
+    }
+  ]
+}
