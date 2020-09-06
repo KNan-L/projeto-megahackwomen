@@ -53,7 +53,7 @@ body {
     display: block;
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    border-radius: 50px;
     margin: 0 auto;
     background-color: white;
     color: #33cc99;
@@ -65,7 +65,7 @@ body {
     transition: border-color 0.2s;
     -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
 }
 
 
@@ -93,7 +93,7 @@ body {
     color: #45CBCE;
 }
 
-
+/* Resultado da Busca*/
 #resultSearch {
     position: relative;
     display: block;
@@ -147,6 +147,8 @@ body {
     width: 100%;
 }
 
+
+/* Divs que parecem botões*/
 .botoes {    
     width: 269px;
     height: 44px;    
@@ -185,6 +187,8 @@ body {
     border: 1px solid #8553F4;
     color: #8553F4;                     
 }
+
+/* Mais Informações do Livro*/
 
 .mais-infos {
     width: 720px;
@@ -227,6 +231,10 @@ body {
     margin-right: 20px;
 }
 
+#mostrar-esconder {
+    cursor: pointer;
+}
+
 .esconder {
     visibility: hidden;    
     height: 0;
@@ -239,5 +247,6 @@ body {
 
 .extras.mostrar {
     visibility: visible;
-
 }
+
+

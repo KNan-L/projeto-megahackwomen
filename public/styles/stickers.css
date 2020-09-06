@@ -1,0 +1,44 @@
+.window-sticker {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+}
+
+.dragstickers {
+  width: 90px;
+  height: 450px;
+  background-color: #45D0C1;
+  padding: 10px;
+  text-align: center;
+}
+
+.dropstickers {
+  width: 500px;
+  height: 450px;
+  background-color: #33CC99;  
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(9, 50px);
+}
+
+.dragstickers img {
+  width: 50px;
+  height: 50px;
+}
+
+.dropzone img {
+  width: 50px;
+  height: 50px;  
+}
+
+.arrastando{
+  cursor: move;
+  opacity: 0.3;
+}
+
+.highlight {
+  background-color: rgba(69, 208, 194, 0.486);
+}
+
+.over {
+  background-color: #4cd13711;
+}

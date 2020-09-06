@@ -39,7 +39,7 @@ server.get('/favoritos', function (req, res) {
 
 server.get('/meus-ebooks', function (req, res) {
 
-    return res.render("meus-ebooks.html")
+    return res.render("meus-ebooks")
 })
 
 server.get('/conquistas', function (req, res) {
@@ -47,6 +47,10 @@ server.get('/conquistas', function (req, res) {
     return res.render("conquistas")
 })
 
+server.get('/stickers', function (req, res) {
+
+    return res.render("stickerspage")
+})
 
 server.get('/busca', function (req, res) {
 

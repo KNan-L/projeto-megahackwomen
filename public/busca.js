@@ -7,6 +7,7 @@
     var titulo = document.querySelector('#titulo')
     var sinopse = document.querySelector('#sinopse')
     var capa = document.querySelector('#capa')
+    const botaovoz = document.querySelector('#botaovoz')
 
     const livros = [
         {
@@ -44,17 +45,17 @@
         {
             "id": 3,
             "titulo": "A Lebre e a Tartaruga",
-            "editora": "",
-            "edicao": "",
+            "editora": "Todolivro",
+            "edicao": "1ª ed.",
             "autor": "Esopo",
-            "sinopse": "A Fabula da Lebre e a Tartaruga",
+            "sinopse": "A lebre vivia caçoando da lerdeza da tartaruga. Certa vez, a tartaruga já muito cansada por ser alvo de gozações, desafiou a lebre para uma corrida.",
             "capa": "lebreetartaruga.png",
             "leitor": "Autônomo",
             "idioma": "Português",
-            "categoria": ["", ""],
-            "tematica": ["", "", ""],
-            "caracteristicas": ["", "", ""],
-            "nuvem": ""
+            "categoria": ["Literatura - Conto", "Fantasia"],
+            "tematica": ["Animal", "Aprendizado", "Aventura"],
+            "caracteristicas": ["Clássicos universais", "Ilustrado", "Paradidático"],
+            "nuvem": "nuvemLebre.png"
         },
 
         {
@@ -74,10 +75,37 @@
             "tematica": ["Amizade", "Amor", "Diversidade", "Aprendizado", "Infância", "Aventura", "Animal"],
             "caracteristicas": ["Ilustrado", "Ficção", "Literatura estrangeira", "Clássicos da literatura universal"],
             "nuvem": "nuvemdepalavras.png"
+        },
+        {
+            "id": 5,
+            "titulo": "Bichos da minha casa",
+            "editora": "Callis",
+            "edicao": "2° ed.",
+            "autor": "Ana Michaelis",
+            "sinopse": "Uma bióloga e uma artista plástica uniram- se para apresentar os bichos que habitam a nossa casa: a formiga, a mosca, a lagartixa e outros.Em letra bastão, o livro é dirigido aos pequenos leitores que se encontram em processo de alfabetização.",
+            "capa": "bichosdaminhacasa.jpg",
+            "leitor": "Iniciante",
+            "idioma": "Português",
+            "categoria": ["Literatura", "InfantoJuvenil"],
+            "tematica": ["Animal", "", ""],
+            "caracteristicas": ["Ilustrado", "Paradidático", ""],
+            "nuvem": "nuvemBichosdaMinhaCasa.png"
+
         }
     ]
 
+    /*Mudar imagem do botão de voz*/
+    botaovoz.addEventListener('mouseover', function () {
+        botaovoz.src = '../assets/icones/otto_SORRINDO_FALANDO_1.svg'
 
+    })
+
+    botaovoz.addEventListener('mouseout', function () {
+        botaovoz.src = '../assets/icones/otto_SEM_FALAR.svg'
+    })
+
+
+    //Reconhcimento de voz
     if (window.SpeechRecognition || window.webkitSpeechRecognition) {
         var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 
@@ -88,6 +116,8 @@
         speakBtn.addEventListener('click', function () {
             try {
                 myRecognition.start()
+
+                botaovoz.src = '../assets/icones/otto_SORRINDO_FALANDO_1.svg'
 
                 resultSpeaker.innerHTML = "Estou te ouvindo!"
 
@@ -112,18 +142,22 @@
                     autor.innerHTML = `${livro.autor}`
                     sinopse.innerHTML = `${livro.sinopse}`
                     capa.src = `assets/${livro.capa}`
-
-                    nuvem.src = `assets/${livro.nuvem}`
-
+                    if (livro.nuvem !== "") {
+                        nuvem.src = `assets/${livro.nuvem}`
+                    }
                     editora.innerHTML = `${livro.editora}`
                     edicao.innerHTML = `${livro.edicao}`
                     tipodeleitor.innerHTML = `${livro.leitor}`
                     idioma.innerHTML = `${livro.idioma}`
                     categoria1.innerHTML = `${livro.categoria[0]}`
                     categoria2.innerHTML = `${livro.categoria[1]}`
-                    tematica.innerHTML = `${livro.tematica}`
-                    caracteristicas.innerHTML = `${livro.caracteristicas}`
-                    return resultSearch.innerHTML = `'Econtrado' + ${livro.autor}`
+                    tematica1.innerHTML = `${livro.tematica[0]}`
+                    tematica2.innerHTML = `${livro.tematica[1]}`
+                    tematica3.innerHTML = `${livro.tematica[2]}`
+                    caracteristicas1.innerHTML = `${livro.caracteristicas[0]}`
+                    caracteristicas2.innerHTML = `${livro.caracteristicas[1]}`
+                    caracteristicas3.innerHTML = `${livro.caracteristicas[2]}`
+                    return resultSearch.innerHTML = `O autor/a ${livro.autor} foi encontrado.`
 
                 } else if (resultSpeak.toLowerCase() == livro.titulo.toLowerCase()) {
                     document.querySelector('#resultadobusca').classList.remove('esconder')
@@ -131,9 +165,9 @@
                     autor.innerHTML = `${livro.autor}`
                     sinopse.innerHTML = `${livro.sinopse}`
                     capa.src = `assets/${livro.capa}`
-
-                    nuvem.src = `assets/${livro.nuvem}`
-
+                    if (livro.nuvem !== "") {
+                        nuvem.src = `assets/${livro.nuvem}`
+                    }
                     editora.innerHTML = `${livro.editora}`
                     edicao.innerHTML = `${livro.edicao}`
                     tipodeleitor.innerHTML = `${livro.leitor}`
@@ -147,9 +181,9 @@
                     caracteristicas2.innerHTML = `${livro.caracteristicas[1]}`
                     caracteristicas3.innerHTML = `${livro.caracteristicas[2]}`
 
-                    return resultSearch.innerHTML = `'Econtrado' + ${livro.titulo}`
+                    return resultSearch.innerHTML = `O livro ${livro.titulo} foi encontrado.`
                 } else {
-                    resultSearch.innerHTML = 'Não encontrado'
+                    resultSearch.innerHTML = `O "${resultSpeak}" não foi encontrado`
                 }
             })
 
@@ -162,19 +196,6 @@
                     document.body.style.backgroundColor = '#047751';
                     break;
             }
-
-            /*busca google*/
-            /*  if(resultSpeak.match(/buscar por/)) {
-                  resultSpeaker.innerHTML = 'Redirecionando...'
-                  setTimeout(function(){
-                      var resultado  = resultSpeak.split('buscar por')
-                      console.log(resultado)
-                      window.location.href = 'https://www.google.com.br/search?q=' + resultado[1]
-     
-     
-                  },2000)
-              } */
-
 
         }, false)
 
