@@ -96,12 +96,12 @@
 
     /*Mudar imagem do botão de voz*/
     botaovoz.addEventListener('mouseover', function () {
-        botaovoz.src = '../assets/icones/otto_SORRINDO_FALANDO_1.svg'
+        botaovoz.src = '../assets/icones/OTTO_PAG_BUSCAR.svg'
 
     })
 
     botaovoz.addEventListener('mouseout', function () {
-        botaovoz.src = '../assets/icones/otto_SEM_FALAR.svg'
+        botaovoz.src = '../assets/icones/OTTO_PAG_BUSCAR_sem_falar.svg'
     })
 
 
