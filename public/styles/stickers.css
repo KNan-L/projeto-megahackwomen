@@ -1,33 +1,70 @@
-.window-sticker {
-  display: grid;
-  grid-template-columns: 90px 1fr;
+.instrucoes-adesivos {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
 }
 
+.instrucoes-adesivos h1 {
+  
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.instrucoes-adesivos p {
+
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.window-sticker { 
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+
+}
+
+
 .dragstickers {
-  width: 90px;
-  height: 450px;
-  background-color: #45D0C1;
+  width: 140px;
+  height: 500px;
+/*  background-color: #45D0C1;*/
   padding: 10px;
   text-align: center;
 }
 
 .dropstickers {
   width: 500px;
-  height: 450px;
-  background-color: #33CC99;  
+  height: 500px;
+  /*background-color: #33CC99;  */
+  
+  /*Matriz dos adesivos*/
   display: grid;
-  grid-template-columns: repeat(10, 50px);
-  grid-template-rows: repeat(9, 50px);
-}
+  grid-template-columns: repeat(9, 98px);
+  grid-template-rows: repeat(5, 100px);
 
-.dragstickers img {
-  width: 50px;
-  height: 50px;
+  /*Imagem do Cenário*/
+  width: 882px;
+  background-color: #84C4F5;
+  /*background-color: #45D0C1;*/
+  background-image: url("../assets/ADESIVOS/cenario1.svg");
+  background-repeat: no-repeat ;
 }
 
 .dropzone img {
-  width: 50px;
-  height: 50px;  
+  width: 100px;
+  height: 100px;  
+}
+
+.dragstickers img {
+  width: 100px;
+  height: 65px;  
+}
+
+
+.separador {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .arrastando{

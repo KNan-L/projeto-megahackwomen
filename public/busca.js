@@ -187,16 +187,6 @@
                 }
             })
 
-            /* Mudar background de acordo com o que é falado */
-            switch (resultSpeak.toLowerCase()) {
-                case 'clarear':
-                    document.body.style.backgroundColor = '#33cc99';
-                    break;
-                case 'escurecer':
-                    document.body.style.backgroundColor = '#047751';
-                    break;
-            }
-
         }, false)
 
         myRecognition.addEventListener('error', function (evt) {
@@ -211,6 +201,4 @@
     } else {
         resultSpeaker.innerHTML = 'Seu navegador não suporta tanta tecnologia!'
     }
-
-
 })();
