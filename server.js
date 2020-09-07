@@ -2,19 +2,25 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 const routes = require('./routes')
 
-const server = express()
+const app = express()
 
-server.use(express.static('public'))
-server.use(routes)
+app.use(express.static('public'))
+app.use(routes)
 
-server.set("view engine", "html")
+app.set("view engine", "html", "njk")
 
 nunjucks.configure("views", {
-    express: server,
+    express: app,
     autoescape: false,
     noCache: true
 })
 
-server.listen(5000, function () {
+var port = 3000;
+
+app.listen(port, function () {
     console.log('server is running')
 })
+
+/*server.listen(5000, function () {
+    console.log('server is running')
+})*/
