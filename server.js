@@ -14,13 +14,12 @@ nunjucks.configure("views", {
     autoescape: false,
     noCache: true
 })
+//pra rodar na umbler
+//var port = 3000;
 
-var port = 3000;
+//pra rodar no ambiente de desenvolvimento
+const port = 5000;
 
 app.listen(port, function () {
     console.log('server is running')
 })
-
-/*server.listen(5000, function () {
-    console.log('server is running')
-})*/
