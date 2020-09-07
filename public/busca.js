@@ -117,7 +117,7 @@
             try {
                 myRecognition.start()
 
-                botaovoz.src = '../assets/icones/otto_SORRINDO_FALANDO_1.svg'
+                botaovoz.src = '../assets/icones/OTTO_PAG_BUSCAR.svg'
 
                 resultSpeaker.innerHTML = "Estou te ouvindo!"
 

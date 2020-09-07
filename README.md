@@ -23,6 +23,9 @@ Por Ericka Lima, Larissa Brosler e Taisa Brosler - Time 22
 # Instalar as dependências
 $ npm install
 
+# Verificar porta para o ambiente de desenvolvimento
+A porta tem que estar 5000 no arquivo server pra rodar o ambiente de desenvolvimento.
+
 # Iniciar o projeto
 $ npm run dev
 
