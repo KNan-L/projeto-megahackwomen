@@ -26,10 +26,6 @@ routes.get('/inicio', function (req, res) {
   return res.render("index")
 })
 
-routes.get('/categorias', function (req, res) {
-  return res.render("categoria")
-})
-
 routes.get('/indicados', function (req, res) {
   return res.render("indicados")
 })
