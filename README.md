@@ -1,11 +1,33 @@
-# Projeto do Desafio Árvore MegaHackWomen
+# Desafio Árvore MegaHackWomen
 
-Projeto Feito do Desafio Árvore No MegaHackWomen 2020 Por mim, Larissa Brosler e Taisa Brosler - Time 22
+## 🔖 Sobre
 
-## Tecnologias Utilizadas
+Projeto Feito para o **Desafio Árvore No MegaHackWomen** 2020.
 
- Html
+Por Ericka Lima, Larissa Brosler e Taisa Brosler - Time 22
 
- Css
+## 🚀 Tecnologias Utilizadas
 
- Javascript
+* Html
+
+* Css
+
+* Javascript
+
+* Reconhecimento de Voz - SpeechRecognition - Web Speech API
+
+* Arrastar e soltar - HTML Drag and Drop API
+
+## Como Rodar o Projeto
+```bash
+# Instalar as dependências
+$ npm install
+
+# Iniciar o projeto
+$ npm run dev
+
+```
+
+#### Observações
+
+*A Tecnologia de SpeechRecognition é experimental e somente compatível com os navegadores Edge e Chrome.*
