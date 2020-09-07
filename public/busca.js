@@ -13,7 +13,7 @@
         {
             "id": 1,
             "titulo": "Esaú e Jacó",
-            "editora": "",
+            "editora": "Árvore de Livros",
             "edicao": "",
             "autor": "Machado de Assis",
             "sinopse": "Esaú e Jacó é, originalmente, um conto bíblico que inspirou a obra de Machado de Assis. O direito ao trono que, preferencialmente seria do filho primogênito, Esaú, é o pontapé inicial da trama. Porém, a preferência por Jacó faz com que a mãe dos dois engane seu marido já velho fazendo seu herdeiro escolhido se passar por seu irmão. Com isso um grande conflito entre os dois irmãos se estabelece. O autor deixa bem claro o papel centralizador da mãe, maior articuladora da história.",
@@ -29,10 +29,10 @@
         {
             "id": 2,
             "titulo": "Alma Inquieta",
-            "editora": "",
-            "edicao": "",
+            "editora": "Clássicos da Literatura",
+            "edicao": "1ª ed.",
             "autor": "Olavo Bilac",
-            "sinopse": "",
+            "sinopse": "Em Alma Inquieta, o autor busca o sentido da vida, predominando o pensamento sobre o tempo passado, a melancolia e a reflexão interior do ser humano. Olavo Bilac segue uma linha contemplativa de poesia, preocupando-se com a morte, com a velhice e o propósito de tudo que existe sem finalidade, daí a inquietude. Um poeta magistral.",
             "capa": "49709315414.jpg",
             "leitor": "Autônomo",
             "idioma": "Português",
